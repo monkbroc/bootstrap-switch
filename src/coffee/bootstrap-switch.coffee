@@ -321,7 +321,7 @@ do ($ = window.jQuery, window) ->
       @_labelWidth = @$label.outerWidth()
 
       # set container and wrapper widths
-      @$container.width (@_handleWidth * 2) + @_labelWidth
+      @$container.width (@_handleWidth * 2) + @_labelWidth + 1
       @$wrapper.width @_handleWidth + @_labelWidth
 
     _containerPosition: (state = @options.state, callback) ->
